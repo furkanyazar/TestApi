@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <h3 align="center">TatilcikusTest Usage Documentation</h3>
+  <h3 align="center">TestApi Usage Documentation</h3>
   <p align="center">
     .NET Backend Developer Project Usage Documentation
   </p>
@@ -26,7 +26,7 @@
 
 ## About The Usage Documentation
 
-This usage documentation is for the [TatilcikusTest](https://github.com/furkanyazar/TatilcikusTest) project and it is a REST API project. In this documentation you will see how some endpoints work.
+This usage documentation is for the [TestApi](https://github.com/furkanyazar/TestApi) project and it is a REST API project. In this documentation you will see how some endpoints work.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

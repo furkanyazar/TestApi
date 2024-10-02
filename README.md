@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <h3 align="center">TatilcikusTest</h3>
+  <h3 align="center">TestApi</h3>
   <p align="center">
     .NET Backend Developer Project
   </p>
@@ -44,13 +44,13 @@ Follow these simple steps to get a local copy up and running.
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/furkanyazar/TatilcikusTest
+   git clone https://github.com/furkanyazar/TestApi
    ```
 2. Change directory
    ```sh
-   cd TatilcikusTest
+   cd TestApi
    ```
-3. Check the BaseDb connection string in `src/tatilcikusTest/WebAPI/appsettings.json`
+3. Check the BaseDb connection string in `src/testApi/WebAPI/appsettings.json`
    ```json
    "ConnectionStrings": {
      "BaseDb": ""
@@ -58,11 +58,11 @@ Follow these simple steps to get a local copy up and running.
    ```
 4. Update database
    ```sh
-   dotnet ef database update --project src/tatilcikusTest/Persistence --startup-project src/tatilcikusTest/WebAPI
+   dotnet ef database update --project src/testApi/Persistence --startup-project src/testApi/WebAPI
    ```
 5. Run
    ```sh
-   dotnet watch run --project src/tatilcikusTest/WebAPI
+   dotnet watch run --project src/testApi/WebAPI
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -81,6 +81,6 @@ Follow these simple steps to get a local copy up and running.
 
 - Furkan Yazar - [furkanyazar.dev](https://furkanyazar.dev/) - [contact@furkanyazar.dev](mailto:contact@furkanyazar.dev)
 
-Project Link: [https://github.com/furkanyazar/TatilcikusTest](https://github.com/furkanyazar/TatilcikusTest)
+Project Link: [https://github.com/furkanyazar/TestApi](https://github.com/furkanyazar/TestApi)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
