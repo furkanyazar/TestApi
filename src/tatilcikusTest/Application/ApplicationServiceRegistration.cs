@@ -1,4 +1,5 @@
 using System.Reflection;
+using Application.Services.Products;
 using FluentValidation;
 using Microsoft.Extensions.DependencyInjection;
 using NArchitecture.Core.Application.Pipelines.Authorization;
@@ -15,7 +16,6 @@ using NArchitecture.Core.ElasticSearch.Models;
 using NArchitecture.Core.Localization.Resource.Yaml.DependencyInjection;
 using NArchitecture.Core.Mailing;
 using NArchitecture.Core.Mailing.MailKit;
-using NArchitecture.Core.Security.JWT;
 
 namespace Application;
 
@@ -25,8 +25,8 @@ public static class ApplicationServiceRegistration
         this IServiceCollection services,
         MailSettings mailSettings,
         FileLogConfiguration fileLogConfiguration,
-        ElasticSearchConfig elasticSearchConfig,
-        TokenOptions tokenOptions
+        ElasticSearchConfig elasticSearchConfig
+    // TokenOptions tokenOptions
     )
     {
         services.AddAutoMapper(Assembly.GetExecutingAssembly());
@@ -49,11 +49,11 @@ public static class ApplicationServiceRegistration
         services.AddSingleton<ILogger, SerilogFileLogger>(_ => new SerilogFileLogger(fileLogConfiguration));
         services.AddSingleton<IElasticSearch, ElasticSearchManager>(_ => new ElasticSearchManager(elasticSearchConfig));
 
-
         services.AddYamlResourceLocalization();
 
-        services.AddSecurityServices<Guid, int, Guid>(tokenOptions);
+        // services.AddSecurityServices<Guid, int, Guid>(tokenOptions);
 
+        services.AddScoped<IProductService, ProductManager>();
         return services;
     }
 
